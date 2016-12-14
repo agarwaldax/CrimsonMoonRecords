@@ -1,0 +1,107 @@
+@import style
+
+nav 
+    width: calc(100vw - 2em)
+    display: block
+    position: fixed
+    top: 0
+    height: 4em
+    padding: 0em 1em
+    background-color: white
+    z-index: 1000
+    +transition(1s ease)
+
+nav .contain
+    max-width: 1280px
+    margin: auto
+    
+nav .contain div
+    position: relative
+    transform: translate(-1em, -18.5em)
+    float: left
+    background-color: $white
+    width: 100vw
+    
+nav .contain div a
+    display: block
+    color: $gray
+    height: 2em
+    line-height: 2em
+    position: relative
+    font-size: 1em
+    font-weight: 400
+    padding: 0.5em 1em
+    +transition(.2s ease)
+    
+nav .contain div a:hover, nav.home .contain div a:hover
+    color: $white
+    background-color: $red
+
+nav img
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    height: 1.8em
+    margin: 1rem 0
+    padding: 0
+    
+nav img.type
+    height: 1.5em
+    padding-left: 0.8em
+    
+nav img.desktop
+    display: none
+    
+nav svg
+    fill: $gray
+    height: 1.5em
+    position: absolute
+    right: 1em
+    top: 1em
+    cursor: pointer
+    
+#toggle
+    transform: translateY(14.5em)
+    
+nav .close
+    display: none
+    
+@media (min-width: 760px)
+    nav
+        transition: none
+    
+    nav.home
+        background: none
+        
+    nav img.desktop
+        display: inline-block
+    nav img.mobile
+        display: none
+        
+    nav .contain div
+        margin-top: 0.6em
+        display: inline-block
+        transform: none
+        width: auto
+        float: right
+        background: none
+
+    nav .contain div a
+        display: inline-block
+        height: auto
+        line-height: auto
+        
+    nav.home .contain div a
+        color: $white
+        font-weight: 400
+        
+    nav .contain div a:hover
+        background-color: $red
+        color: $white
+        font-weight: 400
+        
+    nav .open, nav .close
+        display: none
+        
+    #toggle
+        transform: none

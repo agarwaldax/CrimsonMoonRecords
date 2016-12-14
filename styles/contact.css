@@ -1,0 +1,36 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+body { font-family: "Roboto", sans-serif; padding: 0; margin: 0; position: relative; font-size: 16px; z-index: 0; font-weight: 400; background-color: #1A1A1A; }
+
+a { text-decoration: none; color: #ffffff; }
+
+section { max-width: 800px; margin-left: auto; margin-right: auto; position: relative; z-index: 0; }
+
+@media (min-width: 1000px) { body { font-size: 120%; } }
+
+header { position: relative; margin: 5em auto 0 auto; padding-left: 50px; max-width: 840px; border-bottom-style: solid; border-color: #000000; border-width: thick; }
+
+header h1 { color: #ffffff; font-weight: 400; font-size: 3.2em; display: block; margin: auto; padding-bottom: 1rem; }
+
+@media (max-width: 940px) { header { margin: 5em 1em 0 1em; } }
+
+footer { clear: both; display: fixed; position: relative; bottom: 0; left: 0; background-color: #770707; color: #ffffff; padding-top: 2em; padding-bottom: 2em; }
+
+footer div { margin: auto; padding-left: 2em; position: relative; max-width: 1280px; }
+
+footer h1 { text-align: left; display: block; font-size: 1em; font-weight: 300; }
+
+footer span { position: absolute; text-align: right; right: 2em; top: 0; }
+
+footer img { width: 2.5em; display: inline-block; position: relative; margin-left: 1em; }
+
+footer p { display: block; position: relative; font-size: 1em; font-weight: 300; }
+
+section { text-align: left; width: auto; margin: 3rem auto; padding-left: 3em; padding-right: 3em; }
+
+section h1 { color: #ffffff; display: inline-block; font-weight: 300; font-size: 1.5em; margin: 0 auto 1em auto; }
+
+section img { width: 2em; display: inline-block; margin: auto; margin-left: 0.5em; margin-right: 2em; }
+
+section hr { border: none; height: 2em; }
+
+@media (min-width: 760px) { section br { display: none; } }
