@@ -67,50 +67,57 @@ header span
     vertical-align: middle
 
 div.musicbar
-    background-color: rgba(0, 0, 0, 0.60)
+    background-color: $gray
     position: fixed
     width: 100vw
     height: 4em
     bottom: 0em
     
-section
+article
+    font-size: 85%
     text-align: center
-    position: fixed
-    bottom: 0
-    transform: translateY(-1.4em)
-    max-width: 1280px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
     
-section h1
-    color: $white
+article img
+    height: 3.5em
+    width: auto
     display: inline-block
-    font-weight: 400
-    font-size: 1.5em
-    margin: auto 1em auto 2em
+    vertical-align: middle
+    margin: auto
     
-section h2
+article .info
+    height: 4em
+    text-align: left
+    width: auto
+    display: inline-block
+    vertical-align: middle
+    margin: auto 1em
+    
+article svg 
+    fill: $red
+    height: 1.3em
+    display: inline-block
+    vertical-align: middle
+    margin: auto
+    margin-left: 2em
+    
+article h1
+    color: $white
+    display: block
+    font-weight: 400
+    font-size: 1.2em
+    margin: auto
+    
+article h2
     color: $white
     display: inline-block
     font-weight: 300
-    font-size: 1em
-    margin: auto 1em
-    
-section img
-    height: 4em
-    width: auto
-    top: -1em
-    display: inline-block
+    font-size: 0.85em
     margin: auto
-    transform: translateY(0.3em)
-    
-section svg 
-    fill: $red
-    height: 1.3em
-    margin-left: 2em
-    transform: translateY(0.2em)
-    
-section svg:hover
-    fill: $white
-    cursor: pointer
     
 @media (min-width: 700px)
     header button 
@@ -122,3 +129,48 @@ section svg:hover
         height: 3vh
         font-size: 2.3vh
         line-height: 3vh
+
+@media (min-width: 950px)
+    div.musicbar
+        background-color: rgba(0, 0, 0, 0.60)
+        
+    article
+        font-size: 100%
+        position: fixed
+        top: auto
+        bottom: 0
+        transform: translate(-50%, -1.4em)
+        width: calc(100% - 2em)
+        max-width: 1280px
+
+    article img
+        height: 4em
+        top: -1em
+        transform: translateY(0.3em)
+        
+    article .info
+        transform: translateY(2.5em)
+
+    article svg
+        transform: translateY(1.5em)
+        
+    article h1
+        display: inline-block
+        font-size: 1.5em
+        margin: auto 1em auto 2em
+
+    article h2
+        display: inline-block
+        font-size: 1em
+        margin: auto 1em
+
+    article svg:hover
+        fill: $white
+        cursor: pointer
+        
+    article br
+        display: none
+        
+@media (max-width: 1280px)
+    article
+        font-size: 85%
