@@ -12,7 +12,7 @@ div.background
     background-blend-mode: multiply
     z-index: 0
     
-video
+video.bkg
     z-index: -10
     position: fixed
     top: 50%
@@ -65,7 +65,7 @@ header span
     vertical-align: middle
 
 div.musicbar
-    background-color: $gray
+    background-color: #0b0a0a
     position: fixed
     width: 100vw
     height: 4em
@@ -91,13 +91,19 @@ article .info
     display: inline-block
     vertical-align: middle
     margin: auto 1em
-article svg 
-    fill: $red
-    height: 1.3em
+article .controls
     display: inline-block
-    vertical-align: middle
-    margin: auto
     margin-left: 2em
+    position: relative
+article svg
+    display: block
+    position: absolute
+    fill: $red
+    width: 1.3em
+    left: 0
+    top: -0.7em
+article .pause
+    display: none
 article h1
     color: $white
     display: block
@@ -110,6 +116,23 @@ article h2
     font-weight: 300
     font-size: 0.85em
     margin: auto
+    
+aside video
+    z-index: 1002
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    height: 80vh
+    max-width: 80vw
+    display: none
+aside div
+    z-index: 1001
+    position: fixed
+    background-color: rgba(0, 0, 0, 0.76)
+    width: 100vw
+    height: 100vh
+    display: none
     
 @media (min-width: 700px)
     header button 
@@ -139,7 +162,7 @@ article h2
         transform: translateY(0.3em)
     article .info
         transform: translateY(2.5em)
-    article svg
+    article .controls
         transform: translateY(1.5em)
     article h1
         display: inline-block
@@ -149,6 +172,8 @@ article h2
         display: inline-block
         font-size: 1em
         margin: auto 1em
+    article svg
+        top: -1em
     article svg:hover
         fill: $white
         cursor: pointer

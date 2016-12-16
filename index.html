@@ -12,6 +12,7 @@
         <!-- Script imports -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="scripts/navigation.js"></script>
+        <script src="scripts/index.js"></script>
 
         <!-- Style imports -->
         <link rel="stylesheet" type="text/css" href="styles/index.css">
@@ -52,27 +53,41 @@
             </button>
         </header>
 
-        <video playsinline autoplay muted loop poster="none.jpg" >
+        <video class="bkg" playsinline autoplay muted loop poster="none.jpg" >
             <source src="media/intro.mp4" type="video/mp4">
             Your browser does not support video.
         </video>
+        
+        <aside>
+            <video controls poster="none.jpg" >
+                <source src="media/cmrweb.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+            <div></div>
+        </aside>
+        
 
         <div class="musicbar">
             <article>
                 <img src="icons/soundcloud.svg" alt="album art">
-                    <div class="info">
-                        <h1>Artist Spotlight</h1>
-                        <h2>Song Title</h2>
-                        <h2>(BOMB)</h2> <br>
-                        <h2>Album of the Month - nomoredivision.com</h2>
-                    </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.75 26.45">
-                    <polygon points="0 0 24.75 13.97 0 26.45 0 0"/>
-                </svg>
+                <div class="info">
+                    <h1>Artist Spotlight</h1>
+                    <h2>Song Title</h2>
+                    <h2>(BOMB)</h2> <br>
+                    <h2>Album of the Month - nomoredivision.com</h2>
+                </div>
+                <div class="controls">
+                    <svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.75 26.45">
+                        <polygon points="0 0 24.75 13.97 0 26.45 0 0"/>
+                    </svg>
+                    <svg class="pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.06 21.07">
+                        <path d="M0,21.07H6V0H0ZM12,0V21.07h6V0Z"/>
+                    </svg>
+                </div>
             </article>
         </div>
         
-        <audio> <source src="horse.mp3" type="audio/mpeg"> </audio>
+        <audio> <source src="media/cmrweb.mp4" type="audio/mpeg"> </audio>
 
 
     </body>
