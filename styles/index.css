@@ -49,7 +49,7 @@ article h1 { color: #ffffff; display: block; font-weight: 400; font-size: 1.2em;
 
 article h2 { color: #ffffff; display: inline-block; font-weight: 300; font-size: 0.85em; margin: auto; }
 
-aside video { z-index: 1002; position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); height: 80vh; max-width: 80vw; display: none; }
+aside video { z-index: 1002; position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 80vw; max-height: 80vh; max-width: 80vw; display: none; }
 
 aside div { z-index: 1001; position: fixed; background-color: rgba(0, 0, 0, 0.76); width: 100vw; height: 100vh; display: none; }
 
