@@ -33,6 +33,23 @@ section p
     line-height: 1.6em
     margin: 1em auto
     
+section ul
+    padding: 0
+    margin: 0
+    display: block
+
+section li
+    padding: 1em
+    margin: 1em 0
+    background-color: rgba(0, 0, 0, 0.29)
+    background-image: url(../media/carbon.png)
+    background-repeat: repeat
+    display: block
+    color: $white
+    font-size: 1.2em
+    font-weight: 300
+    line-height: 1.6em   
+    
 @media (min-width: 760px)
     section div
         float: left
@@ -41,3 +58,6 @@ section p
         float: right
         width: 65%
         text-align: justify
+    section li
+        max-width: calc(50% -2em)
+        display: inline-block

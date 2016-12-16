@@ -1,9 +1,13 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
-body { font-family: "Roboto", sans-serif; padding: 0; margin: 0; position: relative; font-size: 16px; z-index: 0; font-weight: 400; background-color: #1A1A1A; }
+body { font-family: "Roboto", sans-serif; padding: 0; margin: 0; position: relative; font-size: 16px; z-index: 0; font-weight: 400; background-color: #1A1A1A; min-height: calc(100vh - 17rem); }
 
 a { text-decoration: none; color: #ffffff; }
 
 section { max-width: 800px; margin-left: auto; margin-right: auto; position: relative; z-index: 0; }
+
+::-moz-selection { background: #8a0707; }
+
+::selection { background: #8a0707; }
 
 @media (min-width: 1000px) { body { font-size: 120%; } }
 
@@ -13,17 +17,22 @@ header h1 { color: #ffffff; font-weight: 400; font-size: 3.2em; display: block; 
 
 @media (max-width: 940px) { header { margin: 5em 1em 0 1em; } }
 
-footer { clear: both; display: fixed; position: relative; bottom: 0; left: 0; background-color: #770707; color: #ffffff; padding-top: 2em; padding-bottom: 2em; }
+footer { display: fixed; position: absolute; width: 100%; bottom: -16rem; left: 0; background-color: #8a0707; color: #ffffff; padding: 1em 0em; }
 
-footer div { margin: auto; padding-left: 2em; position: relative; max-width: 1280px; }
+footer div { margin: auto; padding: 0em 2em; position: relative; max-width: 1280px; }
 
-footer h1 { text-align: left; display: block; font-size: 1em; font-weight: 300; }
+footer h1 { display: block; font-size: 1em; font-weight: 300; margin: 0.5em auto; }
 
-footer span { position: absolute; text-align: right; right: 2em; top: 0; }
+footer img { width: 3em; display: inline-block; }
 
-footer img { width: 2.5em; display: inline-block; position: relative; margin-left: 1em; }
+footer p { display: block; position: relative; font-size: 1em; font-weight: 300; margin: 0.5em auto; }
 
-footer p { display: block; position: relative; font-size: 1em; font-weight: 300; }
+footer br { display: none; }
+
+@media (min-width: 600px) { footer { bottom: -12rem; }
+  footer h1 { text-align: left; display: block; font-size: 1em; font-weight: 300; }
+  footer img { width: 2.5em; display: inline-block; position: relative; margin-left: 1em; float: right; }
+  footer p { display: block; position: absolute; font-size: 1em; font-weight: 300; right: 2em; bottom: -1em; } }
 
 section { text-align: left; width: auto; margin: 4rem auto; padding-left: 3em; padding-right: 3em; }
 
@@ -35,5 +44,10 @@ section img { height: 2em; max-width: 2em; display: inline-block; vertical-align
 
 section p { color: #ffffff; font-size: 1.2em; font-weight: 300; line-height: 1.6em; margin: 1em auto; }
 
+section ul { padding: 0; margin: 0; display: block; }
+
+section li { padding: 1em; margin: 1em 0; background-color: rgba(0, 0, 0, 0.29); background-image: url(../media/carbon.png); background-repeat: repeat; display: block; color: #ffffff; font-size: 1.2em; font-weight: 300; line-height: 1.6em; }
+
 @media (min-width: 760px) { section div { float: left; width: 32%; }
-  section p { float: right; width: 65%; text-align: justify; } }
+  section p { float: right; width: 65%; text-align: justify; }
+  section li { max-width: calc(50% -2em); display: inline-block; } }

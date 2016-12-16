@@ -1,40 +1,60 @@
 footer
-    clear: both
     display: fixed
-    position: relative
-    bottom: 0
+    position: absolute
+    width: 100%
+    bottom: -16rem
     left: 0
-    background-color: #770707
+    background-color: $red
     color: $white
-    padding-top: 2em
-    padding-bottom: 2em
+    padding: 1em 0em
 
 footer div
     margin: auto
-    padding-left: 2em
+    padding: 0em 2em
     position: relative
     max-width: 1280px
     
 footer h1
-    text-align: left
     display: block
     font-size: 1em
     font-weight: 300
-    
-footer span
-    position: absolute
-    text-align: right
-    right: 2em
-    top: 0
-    
+    margin: 0.5em auto
+
 footer img
-    width: 2.5em
+    width: 3em
     display: inline-block
-    position: relative
-    margin-left: 1em
     
 footer p
     display: block
     position: relative
     font-size: 1em
     font-weight: 300
+    margin: 0.5em auto
+    
+footer br
+    display: none
+    
+@media (min-width: 600px)
+    footer
+        bottom: -12rem
+        
+    footer h1
+        text-align: left
+        display: block
+        font-size: 1em
+        font-weight: 300
+
+    footer img
+        width: 2.5em
+        display: inline-block
+        position: relative
+        margin-left: 1em
+        float: right
+
+    footer p
+        display: block
+        position: absolute
+        font-size: 1em
+        font-weight: 300
+        right: 2em
+        bottom: -1em
