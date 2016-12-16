@@ -22,7 +22,6 @@ footer h1
 
 footer img
     width: 3em
-    display: inline-block
     
 footer p
     display: block
@@ -34,9 +33,18 @@ footer p
 footer br
     display: none
     
+footer a
+    width: 3em
+    display: inline-block
+    position: relative
+    margin-right: 0.7em
+    
 @media (min-width: 600px)
     footer
         bottom: -12rem
+        
+    footer br
+        display: block
         
     footer h1
         text-align: left
@@ -44,13 +52,15 @@ footer br
         font-size: 1em
         font-weight: 300
 
+    footer a
+        width: 2.5em
+        margin-left: 1em
+        margin-right: auto
+        float: right
+    
     footer img
         width: 2.5em
-        display: inline-block
-        position: relative
-        margin-left: 1em
-        float: right
-
+        
     footer p
         display: block
         position: absolute

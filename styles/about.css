@@ -23,15 +23,19 @@ footer div { margin: auto; padding: 0em 2em; position: relative; max-width: 1280
 
 footer h1 { display: block; font-size: 1em; font-weight: 300; margin: 0.5em auto; }
 
-footer img { width: 3em; display: inline-block; }
+footer img { width: 3em; }
 
 footer p { display: block; position: relative; font-size: 1em; font-weight: 300; margin: 0.5em auto; }
 
 footer br { display: none; }
 
+footer a { width: 3em; display: inline-block; position: relative; margin-right: 0.7em; }
+
 @media (min-width: 600px) { footer { bottom: -12rem; }
+  footer br { display: block; }
   footer h1 { text-align: left; display: block; font-size: 1em; font-weight: 300; }
-  footer img { width: 2.5em; display: inline-block; position: relative; margin-left: 1em; float: right; }
+  footer a { width: 2.5em; margin-left: 1em; margin-right: auto; float: right; }
+  footer img { width: 2.5em; }
   footer p { display: block; position: absolute; font-size: 1em; font-weight: 300; right: 2em; bottom: -1em; } }
 
 section { text-align: left; width: auto; margin: 3rem auto; padding-left: 3em; padding-right: 3em; }
