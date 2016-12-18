@@ -11,7 +11,7 @@ section { max-width: 800px; margin-left: auto; margin-right: auto; position: rel
 
 @media (min-width: 1000px) { body { font-size: 120%; } }
 
-nav { width: calc(100vw - 2em); display: block; position: fixed; top: 0; height: 4em; padding: 0em 1em; background-color: #000000; z-index: 1000; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
+nav { width: calc(100% - 2em); display: block; position: fixed; top: 0; height: 4em; padding: 0em 1em; background-color: #000000; z-index: 1000; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
 
 nav .contain { max-width: 1280px; margin: auto; }
 

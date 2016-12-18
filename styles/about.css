@@ -42,7 +42,7 @@ section { text-align: left; width: auto; margin: 3rem auto; padding-left: 3em; p
 
 section h1 { color: #ffffff; display: block; font-weight: 400; font-size: 1.7em; margin: 0 auto 1em auto; }
 
-section div { clear: both; width: auto; max-width: 40em; margin: auto; }
+section div { clear: both; width: auto; max-width: 40em; margin: auto; margin-top: 2em; }
 
 section h2 { color: #ffffff; display: inline; font-weight: 300; font-size: 1.5em; padding-left: 0.5em; padding-right: 0.5em; margin: auto; }
 
@@ -54,9 +54,9 @@ section img { width: 100%; display: block; margin: auto; margin-bottom: 1em; }
 
 section svg { fill: #8a0707; height: 1em; }
 
-section svg.flip { -webkit-transform: scaleY(-1); -ms-transform: scaleY(-1); transform: scaleY(-1); }
+section svg.flip { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
 
 section span { color: #8a0707; font-size: 4em; display: inline-block; line-height: 0.5em; -webkit-transform: translateY(0.4em); -ms-transform: translateY(0.4em); transform: translateY(0.4em); }
 
-@media (min-width: 760px) { section img { width: 48%; display: inline-block; }
+@media (min-width: 760px) { section img { width: 48%; display: inline-block; margin-bottom: 0; }
   section p { text-align: justify; } }
