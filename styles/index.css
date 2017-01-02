@@ -59,11 +59,11 @@ aside div { z-index: 1001; position: fixed; background-color: rgba(0, 0, 0, 0.76
 @media (min-width: 950px) { div.musicbar { background-color: rgba(0, 0, 0, 0.6); }
   article { font-size: 100%; position: fixed; top: auto; bottom: 0; -webkit-transform: translate(-50%, -1.4em); -ms-transform: translate(-50%, -1.4em); transform: translate(-50%, -1.4em); width: calc(100% - 2em); max-width: 1280px; }
   article img { height: 4em; top: -1em; -webkit-transform: translateY(0.3em); -ms-transform: translateY(0.3em); transform: translateY(0.3em); }
-  article .info { -webkit-transform: translateY(2.5em); -ms-transform: translateY(2.5em); transform: translateY(2.5em); }
-  article .controls { -webkit-transform: translateY(1.5em); -ms-transform: translateY(1.5em); transform: translateY(1.5em); }
-  article h1 { display: inline-block; font-size: 1.5em; margin: auto 1em auto 2em; }
+  article .info { -webkit-transform: translateY(2.5em); -ms-transform: translateY(2.5em); transform: translateY(2.5em); margin: auto 1em; }
+  article .controls { -webkit-transform: translateY(1.5em); -ms-transform: translateY(1.5em); transform: translateY(1.5em); margin-left: 0em; }
+  article h1 { display: inline-block; font-size: 1.3em; margin: auto 1em auto 2em; }
   article h2 { display: inline-block; font-size: 1em; margin: auto 1em; }
-  article svg { top: -1em; }
+  article svg { top: -1em; height: 1.2em; }
   article svg:hover { fill: #ffffff; cursor: pointer; }
   article br { display: none; } }
 
