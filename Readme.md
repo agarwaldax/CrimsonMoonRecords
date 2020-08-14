@@ -1,1 +1,3 @@
-Website URL: https://agarwaldax.github.io/CrimsonMoonRecords/
+# Crimson Moon Records
+
+A new home for this recording studio.
